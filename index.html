@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
-            scroll-behavior: smooth;
         }
         header {
             background-color: #333;
@@ -22,26 +21,23 @@
             margin: 0;
             font-size: 2.5em;
         }
-        .intro {
-            margin: 20px;
-        }
-        .intro img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            margin: 10px;
-            border-radius: 10px;
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
         nav {
-            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
         nav a {
             text-decoration: none;
             font-size: 1.2em;
             color: #fff;
             background-color: #444;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 15px 25px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
@@ -54,16 +50,13 @@
     <header>
         <h1>Pizzeria Da Leoni</h1>
     </header>
-    <div class="intro">
-        <img src="foto_pizza_1.jpeg" alt="Pizza 1">
-        <img src="foto_pizza_2.jpeg" alt="Pizza 2">
-        <img src="foto_pizza_3.jpeg" alt="Pizza 3">
+    <div class="container">
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Galleria</a>
+            <a href="contact.html">Contatti</a>
+            <a href="story.html">La Nostra Storia</a>
+        </nav>
     </div>
-    <nav>
-        <a href="menu.html">Menu</a>
-        <a href="gallery.html">Galleria</a>
-        <a href="contact.html">Contatti</a>
-        <a href="story.html">La Nostra Storia</a>
-    </nav>
 </body>
 </html>
