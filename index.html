@@ -3,40 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOPO OH</title>
+    <title>Pizzeria Da Leoni</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .message {
-            font-size: 3em;
-            animation: scaleUpDown 2s infinite;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
         }
-        @keyframes scaleUpDown {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.5); }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        /* Media query per schermi più piccoli */
-        @media (max-width: 600px) {
-            .message {
-                font-size: 2em; /* Riduci la dimensione del testo per schermi piccoli */
-            }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
         }
-        @media (max-width: 400px) {
-            .message {
-                font-size: 1.5em; /* Ulteriore riduzione per schermi molto piccoli */
-            }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .menu-item h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .menu-item p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="message">DOPO OH</div>
+    <header>
+        <h1>Pizzeria Da Leoni</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contatti</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Benvenuti alla Pizzeria Da Leoni!</h2>
+            <p>La migliore pizza della città, preparata con ingredienti freschi e amore.</p>
+        </section>
+        <section id="menu">
+            <h2>Il Nostro Menu</h2>
+            <div class="menu-item">
+                <h2>Margherita</h2>
+                <p>Pomodoro, mozzarella, basilico.</p>
+                <p>Prezzo: €8.00</p>
+            </div>
+            <div class="menu-item">
+                <h2>Diavola</h2>
+                <p>Pomodoro, mozzarella, salame piccante.</p>
+                <p>Prezzo: €10.00</p>
+            </div>
+            <div class="menu-item">
+                <h2>Quattro Stagioni</h2>
+                <p>Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive.</p>
+                <p>Prezzo: €12.00</p>
+            </div>
+            <!-- Aggiungi altre pizze qui -->
+        </section>
+        <section id="contact">
+            <h2>Contattaci</h2>
+            <p>Indirizzo: Via della Pizza, 123, Roma</p>
+            <p>Telefono: 123-456-7890</p>
+            <p>Email: info@pizzeriadaleoni.it</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pizzeria Da Leoni - Tutti i diritti riservati</p>
+    </footer>
 </body>
 </html>
