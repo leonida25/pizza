@@ -14,7 +14,7 @@
             text-align: center;
         }
         header {
-            background-color: #444;
+            background-color: #ff6f61;
             color: #fff;
             padding: 20px;
             position: fixed;
@@ -25,11 +25,11 @@
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
-            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+            font-family: 'Dancing Script', cursive;
         }
         .container {
-            padding: 80px 20px 20px;
+            padding: 100px 20px 20px; /* Aumento del padding top per distanziare dal titolo */
             max-width: 600px;
             margin: 0 auto;
         }
@@ -37,13 +37,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
+            gap: 15px; /* Maggiore spazio tra le immagini */
         }
         .gallery img {
             width: 100%;
             max-width: 200px;
             height: auto;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         nav {
             margin: 20px 0;
@@ -52,19 +53,20 @@
             text-decoration: none;
             font-size: 1.2em;
             color: #fff;
-            background-color: #666;
+            background-color: #ff8c00;
             padding: 15px 25px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #777;
+            background-color: #ff6f61;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Pizzeria Da Leoni - Galleria</h1>
+        <h1>Pizzeria Da Leoni</h1>
     </header>
     <div class="container">
         <section id="gallery">
