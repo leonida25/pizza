@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOPO OH</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+        }
+        .message {
+            font-size: 3em;
+            animation: scaleUpDown 2s infinite;
+        }
+        @keyframes scaleUpDown {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+        }
+        /* Media query per schermi più piccoli */
+        @media (max-width: 600px) {
+            .message {
+                font-size: 2em; /* Riduci la dimensione del testo per schermi piccoli */
+            }
+        }
+        @media (max-width: 400px) {
+            .message {
+                font-size: 1.5em; /* Ulteriore riduzione per schermi molto piccoli */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">DOPO OH</div>
+</body>
+</html>
