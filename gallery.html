@@ -5,7 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleria - Pizzeria Da Leoni</title>
     <style>
-        /* Riutilizza il CSS dalla pagina principale o aggiungi stili specifici */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #444;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -16,10 +64,10 @@
         <section>
             <h2>Galleria</h2>
             <div class="gallery">
-                <img src="foto_pizza_1.jpeg" alt="">
-                <img src="foto_pizza_2.jpeg" alt="">
-                <img src="foto_pizza_3.jpeg" alt="">
-                <img src="foto_pizza_4.jpeg" alt="">
+                <img src="foto_pizza_1.jpeg" alt="Pizza 1">
+                <img src="foto_pizza_2.jpeg" alt="Pizza 2">
+                <img src="foto_pizza_3.jpeg" alt="Pizza 3">
+                <img src="foto_pizza_4.jpeg" alt="Pizza 4">
                 <!-- Aggiungi altre immagini qui -->
             </div>
         </section>
@@ -29,3 +77,4 @@
     </nav>
 </body>
 </html>
+
