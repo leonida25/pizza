@@ -30,21 +30,31 @@
         }
         .container {
             padding: 120px 20px 20px;
-            max-width: 600px;
+            max-width: 1200px;
             margin: 0 auto;
         }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 2em;
+            font-family: 'Dancing Script', cursive;
+            color: #6f4f4a;
+        }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 15px;
+            justify-items: center;
         }
         .gallery img {
             width: 100%;
-            max-width: 200px;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
         nav {
             margin: 20px 0;
@@ -72,9 +82,10 @@
         <section id="gallery">
             <h2>Galleria</h2>
             <div class="gallery">
-                <img src="pizza1.jpg" alt="Pizza Margherita">
-                <img src="pizza2.jpg" alt="Pizza Diavola">
-                <img src="pizza3.jpg" alt="Pizza Quattro Stagioni">
+                <img src="foto_pizza_1.jpeg" alt="">
+                <img src="foto_pizza_2.jpeg" alt="">
+                <img src="foto_pizza_3.jpeg" alt="">
+                <img src="foto_pizza_4.jpeg" alt="">
             </div>
         </section>
     </div>
